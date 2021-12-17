@@ -8,6 +8,11 @@ const app = express();
 
 const PORT =  process.env.PORT || 3000;
 
+//BODYPARSER
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json());
+
+//ROUTES
 app.use("/users", require("./routes/users"));
 app.use("/meetings", require("./routes/meetings"));
 
