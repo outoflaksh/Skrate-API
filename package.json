@@ -1,0 +1,28 @@
+{
+  "name": "skrate-api",
+  "version": "1.0.0",
+  "description": "take home assignment for skrate internship",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outoflaksh/Skrate-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/outoflaksh/Skrate-API/issues"
+  },
+  "homepage": "https://github.com/outoflaksh/Skrate-API#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
