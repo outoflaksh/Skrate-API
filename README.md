@@ -8,6 +8,14 @@ The ID's so recieved can be used to access user/meeting details.
 
 *The API can be accessed [here](https://skrate-meetings-api.herokuapp.com).*
 
+### 🔩 Ingredients
+The API was built using the *Node.js* runtime and *Express.js* as the backend framework with *MongoDB* as the database.
+
+**Libraries used:**
+
+ - Mongoose: Used for handling all things MongoDB. The model schemas, and CRUD operations on the db were done using Mongoose. It is efficient and low-code giving high performance in low time.
+ - UUID: Used for creation of the unique ID's.
+
 ### 🛠 Documentation:
 #### Meetings API:
 **GET** `/meetings/all`
