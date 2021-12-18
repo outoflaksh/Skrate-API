@@ -6,7 +6,7 @@ This API was designed to register meetings between different users and retrieve 
 Users can register with a username and recieve a unique user ID upon successful registration. They can then use those unique ID's to set up a meeting with another user and recieve a unique meeting ID.
 The ID's so recieved can be used to access user/meeting details.
 
-*The API can be accessed here.*
+*The API can be accessed [here](https://skrate-meetings-api.herokuapp.com).*
 
 ### Documentation:
 #### Meetings API:
