@@ -10,6 +10,17 @@ router.get('/all', async (req, res) => {
     return res.json(meetings)
 })
 
+//Endpoint to get one meeting details by ID
+router.get('/:mid', async (req, res) => {
+    const meeting = await Meeting.findOne({userId: req.params.mid}, {_id : 0, __v : 0})
+
+    if (!meeting) {
+        return res.status(404).json({msg: 'Meeting not found'})
+    }
+
+    return res.json(meeting)
+})
+
 //Endpoint for creating a new meeting
 router.post('/new', async (req, res) => {
     if (!(req.body.uid1 && req.body.uid2 && req.body.date)) {
