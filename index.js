@@ -16,6 +16,10 @@ app.use(express.json());
 app.use("/users", require("./routes/users"));
 app.use("/meetings", require("./routes/meetings"));
 
+app.get('/', (req, res) => {
+  res.send('Read the documentation <a href="https://github.com/outoflaksh/Skrate-API">here.</a>')
+})
+
 app.listen(PORT, () => {
   console.log(`Server up and running on port ${PORT}`);
 });
